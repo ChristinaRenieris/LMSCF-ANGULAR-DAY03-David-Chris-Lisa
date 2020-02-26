@@ -1,1 +1,9 @@
-<p>product-details works!</p>
+<div class="card col-8 text-center" style="width: 18rem;" *ngIf="product">
+    <img class="card-img-top" src="/assets/img/{{ product.img }}" alt="Card Image">
+    <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.price }} $</p>
+        <button class="btn btn-success" (click)="alertItemAdded(product)">Add to Cart</button>
+        <button class="btn btn-warning" routerLink="/productList">Back</button>
+    </div>
+</div>

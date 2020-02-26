@@ -1,0 +1,22 @@
+.fu {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    width: 40%;
+    padding: 0.5em;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+}
+
+.imgBox {
+    padding-top: 2em;
+    background-color: lightblue;
+    text-align: center;
+}
+
+img {
+    margin: 2em;
+}
