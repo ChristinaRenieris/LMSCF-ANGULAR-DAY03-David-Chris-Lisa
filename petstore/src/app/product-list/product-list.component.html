@@ -1,9 +1,25 @@
 <div class="row m-4">
-    <div class="card col-4 text-center" style="width: 18rem;" *ngFor="let product of products ; index as productId">
-        <img class="card-img-top" src="/assets/img/{{ product.img }}" alt="Card Image">
-        <div class="card-body">
-            <h5 class="card-title">{{ product.name }}</h5>
-            <button class="btn btn-danger" [routerLink]="['/products', productId]">Display Details</button>
-        </div>
+  <div class="card col-4 text-center" style="width: 18rem;" *ngFor="let product of products ; index as productId">
+    <img class="card-img-top" src="/assets/img/{{ product.img }}" alt="Card Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <button class="btn btn-danger" [routerLink]="['/products', productId]">Display Details</button>
     </div>
+  </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item" [class.active]="productID == 0" *ngFor="let product of products; index as productID">
+        <img class="d-block w-100" src="/assets/img/{{ product.img }}" alt="First slide">
+        <h5 class="card-title">{{ product.name }}</h5>
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>

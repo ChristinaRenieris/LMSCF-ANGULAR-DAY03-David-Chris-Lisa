@@ -19,4 +19,7 @@ this.items.push(product);
     this.items= [];
     return this.items;
   };
+  addMore(a){
+    a.qtty ++;
+  }
 }
