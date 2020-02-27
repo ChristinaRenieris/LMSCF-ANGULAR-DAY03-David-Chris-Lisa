@@ -3,20 +3,22 @@
     justify-content: center;
 }
 
-h3 {
+h1{
     text-align: center;
     width: 40%;
     padding: 0.5em;
-    border-radius: 25px;
-    background-color: #f4f4f4;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px darkblue ;
+
 }
 
 .imgBox {
     padding-top: 2em;
     background-color: lightblue;
     text-align: center;
+    height: 35rem;
+    position: relative;
 }
 
-img {
-    margin: 2em;
-}
+
+

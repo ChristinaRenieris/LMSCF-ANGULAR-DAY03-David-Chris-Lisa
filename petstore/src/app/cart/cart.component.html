@@ -30,8 +30,14 @@
 	      <td>{{ product.name }}</td>
 	      <td>{{ product.price }} $</td>
 	      <td><button class="btn btn-danger" (click)="removeItem(i)">Remove Product</button></td>
-	      <button class="plus"> + </button> <button class="minus"> - </button>
+	      <button (click)="addMore(product)" class="plus"> + </button> <button (click)="addLess(product,i)" class="minus"> - </button>
 	    </tr>
 	  </tbody>
+    <thead >
+      <tr class="text-center">
+        <th colspan="6">Total: {{ calcTotal() }} $</th>
+      </tr>
+    </thead>
 	</table>
 </div>
+

@@ -1,0 +1,17 @@
+first step we need to open the cmd inside the folder that have the html part
+and then type 
+
+npm init
+after that they will ask you couple of question about project name and etc .
+you just need to click enter 5 times 
+
+after that 
+npm i lite-server --save
+
+after that open the package.json file and go to the scripts 
+then add new property inside called start and the value of it is lite-server
+Line 8 =>    "start": "lite-server"
+
+after that just type in cmd 
+npm start -o 
+-o to open
